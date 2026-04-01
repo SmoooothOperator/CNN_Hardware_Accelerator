@@ -1,0 +1,974 @@
+ -- Copyright (C) 2023  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and any partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel FPGA IP License Agreement, or other applicable license
+ -- agreement, including, without limitation, that your use is for
+ -- the sole purpose of programming logic devices manufactured by
+ -- Intel and sold by Intel or its authorized distributors.  Please
+ -- refer to the applicable agreement for further details, at
+ -- https://fpgasoftware.intel.com/eula.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V or 3.0V depending on the requirements of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 3:       2.5V
+ --                  Bank 4:       2.5V
+ --                  Bank 5:       2.5V
+ --                  Bank 6:       2.5V
+ --                  Bank 7:       2.5V
+ --                  Bank 8:  2.5V
+ --                  Bank 9:  2.5V
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --                  either individually through a 10k Ohm resistor to GND or tie all pins
+ --                  together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_GND*      : Unused GXB Receiver or dedicated reference clock pin. This pin
+ --                 must be connected to GXB_GND through a 10k Ohm resistor.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Standard Edition
+CHIP  "corelet"  ASSIGNED TO AN: EP4CGX150DF31I7AD
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+NC                           : A2        :        :                   :         :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : A3        : input  : 2.5 V             :         : 9         : N              
+inst[27]                     : A4        : input  : 2.5 V             :         : 8         : N              
+pmem_data_in[17]             : A5        : input  : 2.5 V             :         : 8         : N              
+pmem_data_in[19]             : A6        : input  : 2.5 V             :         : 8         : N              
+pmem_data_in[26]             : A7        : input  : 2.5 V             :         : 8         : N              
+sfp_out[27]                  : A8        : output : 2.5 V             :         : 8         : N              
+sfp_out[26]                  : A9        : output : 2.5 V             :         : 8         : N              
+pmem_data_out[69]            : A10       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[64]            : A11       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[72]            : A12       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[79]            : A13       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[76]            : A14       : output : 2.5 V             :         : 8         : N              
+pmem_data_in[10]             : A15       : input  : 2.5 V             :         : 7         : N              
+pmem_data_in[30]             : A16       : input  : 2.5 V             :         : 7         : N              
+xmem_data[10]                : A17       : input  : 2.5 V             :         : 7         : N              
+xmem_data[8]                 : A18       : input  : 2.5 V             :         : 7         : N              
+xmem_data[9]                 : A19       : input  : 2.5 V             :         : 7         : N              
+inst[4]                      : A20       : input  : 2.5 V             :         : 7         : N              
+inst[3]                      : A21       : input  : 2.5 V             :         : 7         : N              
+xmem_data[22]                : A22       : input  : 2.5 V             :         : 7         : N              
+sfp_out[65]                  : A23       : output : 2.5 V             :         : 7         : N              
+sfp_out[66]                  : A24       : output : 2.5 V             :         : 7         : N              
+pmem_data_in[75]             : A25       : input  : 2.5 V             :         : 7         : N              
+pmem_data_in[68]             : A26       : input  : 2.5 V             :         : 7         : N              
+pmem_data_in[65]             : A27       : input  : 2.5 V             :         : 7         : N              
+pmem_data_in[67]             : A28       : input  : 2.5 V             :         : 7         : N              
+pmem_data_in[64]             : A29       : input  : 2.5 V             :         : 7         : N              
+GXB_GND*                     : AA1       :        :                   :         : QL0       :                
+GXB_GND*                     : AA2       :        :                   :         : QL0       :                
+GND                          : AA3       : gnd    :                   :         :           :                
+GND                          : AA4       : gnd    :                   :         :           :                
+GND                          : AA5       : gnd    :                   :         :           :                
+VCCL_GXB                     : AA6       : power  :                   : 1.2V    :           :                
+VCCA                         : AA7       : power  :                   : 2.5V    :           :                
+GND                          : AA8       : gnd    :                   :         :           :                
+VCCA                         : AA9       : power  :                   : 2.5V    :           :                
+VCCINT                       : AA10      : power  :                   : 1.2V    :           :                
+GND                          : AA11      : gnd    :                   :         :           :                
+pmem_data_out[37]            : AA12      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[47]            : AA13      : output : 2.5 V             :         : 3         : N              
+VCCINT                       : AA14      : power  :                   : 1.2V    :           :                
+pmem_data_out[2]             : AA15      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[57]            : AA16      : output : 2.5 V             :         : 3         : N              
+xmem_data[19]                : AA17      : input  : 2.5 V             :         : 4         : N              
+pmem_data_out[119]           : AA18      : output : 2.5 V             :         : 4         : N              
+GND                          : AA19      : gnd    :                   :         :           :                
+sfp_out[33]                  : AA20      : output : 2.5 V             :         : 4         : N              
+sfp_out[123]                 : AA21      : output : 2.5 V             :         : 4         : N              
+pmem_data_in[2]              : AA22      : input  : 2.5 V             :         : 5         : N              
+VCCIO5                       : AA23      : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : AA24      : power  :                   : 2.5V    : 5         :                
+pmem_data_in[115]            : AA25      : input  : 2.5 V             :         : 5         : N              
+pmem_data_in[5]              : AA26      : input  : 2.5 V             :         : 5         : N              
+pmem_data_in[1]              : AA27      : input  : 2.5 V             :         : 5         : N              
+pmem_data_out[124]           : AA28      : output : 2.5 V             :         : 5         : N              
+sfp_out[15]                  : AA29      : output : 2.5 V             :         : 5         : N              
+pmem_data_in[87]             : AA30      : input  : 2.5 V             :         : 5         : N              
+GND                          : AB1       : gnd    :                   :         :           :                
+GND                          : AB2       : gnd    :                   :         :           :                
+GXB_NC                       : AB3       :        :                   :         : QL0       :                
+GXB_NC                       : AB4       :        :                   :         : QL0       :                
+GND                          : AB5       : gnd    :                   :         :           :                
+GND                          : AB6       : gnd    :                   :         :           :                
+GND                          : AB7       : gnd    :                   :         :           :                
+VCCINT                       : AB8       : power  :                   : 1.2V    :           :                
+CONF_DONE                    : AB9       :        :                   :         : 3         :                
+GND                          : AB10      : gnd    :                   :         :           :                
+pmem_data_out[60]            : AB11      : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB12      : power  :                   : 2.5V    : 3         :                
+pmem_data_out[35]            : AB13      : output : 2.5 V             :         : 3         : N              
+inst[36]                     : AB14      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB15      : power  :                   : 2.5V    : 3         :                
+pmem_data_out[42]            : AB16      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[115]           : AB17      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AB18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB20      : power  :                   : 2.5V    : 4         :                
+sfp_out[126]                 : AB21      : output : 2.5 V             :         : 4         : N              
+sfp_out[122]                 : AB22      : output : 2.5 V             :         : 4         : N              
+VCCD_PLL                     : AB23      : power  :                   : 1.2V    :           :                
+VCCA                         : AB24      : power  :                   : 2.5V    :           :                
+pmem_data_in[121]            : AB25      : input  : 2.5 V             :         : 5         : N              
+pmem_data_in[117]            : AB26      : input  : 2.5 V             :         : 5         : N              
+sfp_out[13]                  : AB27      : output : 2.5 V             :         : 5         : N              
+sfp_out[9]                   : AB28      : output : 2.5 V             :         : 5         : N              
+pmem_data_out[101]           : AB29      : output : 2.5 V             :         : 5         : N              
+pmem_data_in[6]              : AB30      : input  : 2.5 V             :         : 5         : N              
+GXB_GND*                     : AC1       :        :                   :         : QL0       :                
+GXB_GND*                     : AC2       :        :                   :         : QL0       :                
+GND                          : AC3       : gnd    :                   :         :           :                
+GND                          : AC4       : gnd    :                   :         :           :                
+GND                          : AC5       : gnd    :                   :         :           :                
+GND                          : AC6       : gnd    :                   :         :           :                
+MSEL2                        : AC7       :        :                   :         : 3         :                
+MSEL3                        : AC8       :        :                   :         : 3         :                
+VCCIO3                       : AC9       : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AC10      : power  :                   : 2.5V    : 3         :                
+GND                          : AC11      : gnd    :                   :         :           :                
+VCCIO3                       : AC12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AC13      : power  :                   : 2.5V    : 3         :                
+GND                          : AC14      : gnd    :                   :         :           :                
+VCCIO3                       : AC15      : power  :                   : 2.5V    : 3         :                
+pmem_data_out[15]            : AC16      : output : 2.5 V             :         : 3         : N              
+GND                          : AC17      : gnd    :                   :         :           :                
+VCCIO4                       : AC18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC19      : power  :                   : 2.5V    : 4         :                
+GND                          : AC20      : gnd    :                   :         :           :                
+VCCIO4                       : AC21      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC22      : power  :                   : 2.5V    : 4         :                
+GND                          : AC23      : gnd    :                   :         :           :                
+GND                          : AC24      : gnd    :                   :         :           :                
+pmem_data_in[114]            : AC25      : input  : 2.5 V             :         : 5         : N              
+GND                          : AC26      : gnd    :                   :         :           :                
+sfp_out[7]                   : AC27      : output : 2.5 V             :         : 5         : N              
+sfp_out[14]                  : AC28      : output : 2.5 V             :         : 5         : N              
+GND                          : AC29      : gnd    :                   :         :           :                
+sfp_out[11]                  : AC30      : output : 2.5 V             :         : 5         : N              
+GND                          : AD1       : gnd    :                   :         :           :                
+GND                          : AD2       : gnd    :                   :         :           :                
+VCCA_GXB                     : AD3       : power  :                   : 2.5V    :           :                
+VCCL_GXB                     : AD4       : power  :                   : 1.2V    :           :                
+GND                          : AD5       : gnd    :                   :         :           :                
+pmem_data_out[62]            : AD6       : output : 2.5 V             :         : 3         : N              
+MSEL0                        : AD7       :        :                   :         : 3         :                
+MSEL1                        : AD8       :        :                   :         : 3         :                
+sfp_out[55]                  : AD9       : output : 2.5 V             :         : 3         : N              
+sfp_out[50]                  : AD10      : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD11      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD14      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD15      : power  :                   : 2.5V    : 3         :                
+pmem_data_out[0]             : AD16      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD17      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD21      : power  :                   : 2.5V    : 4         :                
+pmem_data_in[33]             : AD22      : input  : 2.5 V             :         : 4         : N              
+sfp_out[118]                 : AD23      : output : 2.5 V             :         : 4         : N              
+pmem_data_in[113]            : AD24      : input  : 2.5 V             :         : 4         : N              
+pmem_data_in[120]            : AD25      : input  : 2.5 V             :         : 5         : N              
+pmem_data_in[116]            : AD26      : input  : 2.5 V             :         : 5         : N              
+sfp_out[4]                   : AD27      : output : 2.5 V             :         : 5         : N              
+sfp_out[0]                   : AD28      : output : 2.5 V             :         : 5         : N              
+pmem_data_in[15]             : AD29      : input  : 2.5 V             :         : 5         : N              
+pmem_data_in[3]              : AD30      : input  : 2.5 V             :         : 5         : N              
+RREF                         : AE1       :        :                   :         :           :                
+GND                          : AE2       : gnd    :                   :         :           :                
+sfp_out[53]                  : AE3       : output : 2.5 V             :         : 3         : N              
+pmem_data_in[55]             : AE4       : input  : 2.5 V             :         : 3         : N              
+inst[14]                     : AE5       : input  : 2.5 V             :         : 3         : N              
+inst[25]                     : AE6       : input  : 2.5 V             :         : 3         : N              
+~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : AE7       : output : 2.5 V             :         : 3         : N              
+inst[9]                      : AE8       : input  : 2.5 V             :         : 3         : N              
+pmem_data_in[53]             : AE9       : input  : 2.5 V             :         : 3         : N              
+inst[21]                     : AE10      : input  : 2.5 V             :         : 3         : N              
+sfp_out[54]                  : AE11      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[53]            : AE12      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[28]            : AE13      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[13]            : AE14      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[44]            : AE15      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[6]             : AE16      : output : 2.5 V             :         : 4         : N              
+pmem_data_out[3]             : AE17      : output : 2.5 V             :         : 4         : N              
+sfp_out[38]                  : AE18      : output : 2.5 V             :         : 4         : N              
+sfp_out[42]                  : AE19      : output : 2.5 V             :         : 4         : N              
+pmem_data_in[35]             : AE20      : input  : 2.5 V             :         : 4         : N              
+pmem_data_in[38]             : AE21      : input  : 2.5 V             :         : 4         : N              
+pmem_data_in[43]             : AE22      : input  : 2.5 V             :         : 4         : N              
+pmem_data_in[118]            : AE23      : input  : 2.5 V             :         : 4         : N              
+pmem_data_in[127]            : AE24      : input  : 2.5 V             :         : 4         : N              
+sfp_out[127]                 : AE25      : output : 2.5 V             :         : 5         : N              
+pmem_data_in[123]            : AE26      : input  : 2.5 V             :         : 5         : N              
+pmem_data_in[4]              : AE27      : input  : 2.5 V             :         : 5         : N              
+pmem_data_in[13]             : AE28      : input  : 2.5 V             :         : 5         : N              
+sfp_out[2]                   : AE29      : output : 2.5 V             :         : 5         : N              
+sfp_out[10]                  : AE30      : output : 2.5 V             :         : 5         : N              
+GND                          : AF1       : gnd    :                   :         :           :                
+GND                          : AF2       : gnd    :                   :         :           :                
+sfp_out[62]                  : AF3       : output : 2.5 V             :         : 3         : N              
+sfp_out[49]                  : AF4       : output : 2.5 V             :         : 3         : N              
+GND                          : AF5       : gnd    :                   :         :           :                
+sfp_out[56]                  : AF6       : output : 2.5 V             :         : 3         : N              
+inst[10]                     : AF7       : input  : 2.5 V             :         : 3         : N              
+GND                          : AF8       : gnd    :                   :         :           :                
+pmem_data_in[52]             : AF9       : input  : 2.5 V             :         : 3         : N              
+sfp_out[52]                  : AF10      : output : 2.5 V             :         : 3         : N              
+GND                          : AF11      : gnd    :                   :         :           :                
+pmem_data_out[54]            : AF12      : output : 2.5 V             :         : 3         : N              
+pmem_data_in[62]             : AF13      : input  : 2.5 V             :         : 3         : N              
+GND                          : AF14      : gnd    :                   :         :           :                
+pmem_data_out[10]            : AF15      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[4]             : AF16      : output : 2.5 V             :         : 4         : N              
+GND                          : AF17      : gnd    :                   :         :           :                
+pmem_data_out[118]           : AF18      : output : 2.5 V             :         : 4         : N              
+sfp_out[45]                  : AF19      : output : 2.5 V             :         : 4         : N              
+GND                          : AF20      : gnd    :                   :         :           :                
+pmem_data_in[42]             : AF21      : input  : 2.5 V             :         : 4         : N              
+pmem_data_in[39]             : AF22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AF23      : gnd    :                   :         :           :                
+sfp_out[125]                 : AF24      : output : 2.5 V             :         : 4         : N              
+pmem_data_in[122]            : AF25      : input  : 2.5 V             :         : 4         : N              
+GND                          : AF26      : gnd    :                   :         :           :                
+pmem_data_out[105]           : AF27      : output : 2.5 V             :         : 5         : N              
+sfp_out[8]                   : AF28      : output : 2.5 V             :         : 5         : N              
+GND                          : AF29      : gnd    :                   :         :           :                
+pmem_data_in[14]             : AF30      : input  : 2.5 V             :         : 5         : N              
+NC                           : AG1       :        :                   :         :           :                
+GND                          : AG2       : gnd    :                   :         :           :                
+sfp_out[63]                  : AG3       : output : 2.5 V             :         : 3         : N              
+sfp_out[57]                  : AG4       : output : 2.5 V             :         : 3         : N              
+pmem_data_in[50]             : AG5       : input  : 2.5 V             :         : 3         : N              
+sfp_out[51]                  : AG6       : output : 2.5 V             :         : 3         : N              
+pmem_data_out[63]            : AG7       : output : 2.5 V             :         : 3         : N              
+pmem_data_out[38]            : AG8       : output : 2.5 V             :         : 3         : N              
+sfp_out[48]                  : AG9       : output : 2.5 V             :         : 3         : N              
+pmem_data_in[59]             : AG10      : input  : 2.5 V             :         : 3         : N              
+pmem_data_out[49]            : AG11      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[39]            : AG12      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[40]            : AG13      : output : 2.5 V             :         : 3         : N              
+xmem_data[31]                : AG14      : input  : 2.5 V             :         : 3         : N              
+pmem_data_out[7]             : AG15      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[1]             : AG16      : output : 2.5 V             :         : 4         : N              
+pmem_data_out[116]           : AG17      : output : 2.5 V             :         : 4         : N              
+sfp_out[41]                  : AG18      : output : 2.5 V             :         : 4         : N              
+pmem_data_out[126]           : AG19      : output : 2.5 V             :         : 4         : N              
+sfp_out[43]                  : AG20      : output : 2.5 V             :         : 4         : N              
+pmem_data_in[36]             : AG21      : input  : 2.5 V             :         : 4         : N              
+ofifo_valid                  : AG22      : output : 2.5 V             :         : 4         : N              
+pmem_data_out[121]           : AG23      : output : 2.5 V             :         : 4         : N              
+sfp_out[120]                 : AG24      : output : 2.5 V             :         : 4         : N              
+pmem_data_in[112]            : AG25      : input  : 2.5 V             :         : 4         : N              
+sfp_out[112]                 : AG26      : output : 2.5 V             :         : 4         : N              
+sfp_out[115]                 : AG27      : output : 2.5 V             :         : 4         : N              
+pmem_data_in[126]            : AG28      : input  : 2.5 V             :         : 4         : N              
+inst[30]                     : AG29      : input  : 2.5 V             :         : 5         : N              
+sfp_out[1]                   : AG30      : output : 2.5 V             :         : 5         : N              
+NC                           : AH1       :        :                   :         :           :                
+pmem_data_in[56]             : AH2       : input  : 2.5 V             :         : 3         : N              
+sfp_out[58]                  : AH3       : output : 2.5 V             :         : 3         : N              
+sfp_out[61]                  : AH4       : output : 2.5 V             :         : 3         : N              
+pmem_data_in[54]             : AH5       : input  : 2.5 V             :         : 3         : N              
+pmem_data_in[63]             : AH6       : input  : 2.5 V             :         : 3         : N              
+xmem_data[29]                : AH7       : input  : 2.5 V             :         : 3         : N              
+pmem_data_out[45]            : AH8       : output : 2.5 V             :         : 3         : N              
+pmem_data_out[51]            : AH9       : output : 2.5 V             :         : 3         : N              
+pmem_data_in[58]             : AH10      : input  : 2.5 V             :         : 3         : N              
+pmem_data_out[50]            : AH11      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[56]            : AH12      : output : 2.5 V             :         : 3         : N              
+pmem_data_in[48]             : AH13      : input  : 2.5 V             :         : 3         : N              
+pmem_data_out[46]            : AH14      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[5]             : AH15      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[11]            : AH16      : output : 2.5 V             :         : 3         : N              
+sfp_out[35]                  : AH17      : output : 2.5 V             :         : 4         : N              
+pmem_data_out[117]           : AH18      : output : 2.5 V             :         : 4         : N              
+pmem_data_out[113]           : AH19      : output : 2.5 V             :         : 4         : N              
+pmem_data_in[32]             : AH20      : input  : 2.5 V             :         : 4         : N              
+pmem_data_in[34]             : AH21      : input  : 2.5 V             :         : 4         : N              
+pmem_data_in[44]             : AH22      : input  : 2.5 V             :         : 4         : N              
+pmem_data_out[104]           : AH23      : output : 2.5 V             :         : 4         : N              
+sfp_out[113]                 : AH24      : output : 2.5 V             :         : 4         : N              
+pmem_data_in[40]             : AH25      : input  : 2.5 V             :         : 4         : N              
+sfp_out[116]                 : AH26      : output : 2.5 V             :         : 4         : N              
+pmem_data_in[119]            : AH27      : input  : 2.5 V             :         : 4         : N              
+pmem_data_in[125]            : AH28      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH29      :        :                   :         : 5         :                
+inst[2]                      : AH30      : input  : 2.5 V             :         : 5         : N              
+nSTATUS                      : AJ1       :        :                   :         : 3         :                
+GND                          : AJ2       : gnd    :                   :         :           :                
+sfp_out[59]                  : AJ3       : output : 2.5 V             :         : 3         : N              
+pmem_data_in[51]             : AJ4       : input  : 2.5 V             :         : 3         : N              
+GND                          : AJ5       : gnd    :                   :         :           :                
+pmem_data_in[60]             : AJ6       : input  : 2.5 V             :         : 3         : N              
+pmem_data_out[33]            : AJ7       : output : 2.5 V             :         : 3         : N              
+GND                          : AJ8       : gnd    :                   :         :           :                
+xmem_data[30]                : AJ9       : input  : 2.5 V             :         : 3         : N              
+pmem_data_out[43]            : AJ10      : output : 2.5 V             :         : 3         : N              
+GND                          : AJ11      : gnd    :                   :         :           :                
+sfp_out[40]                  : AJ12      : output : 2.5 V             :         : 3         : N              
+sfp_out[44]                  : AJ13      : output : 2.5 V             :         : 3         : N              
+GND                          : AJ14      : gnd    :                   :         :           :                
+xmem_data[17]                : AJ15      : input  : 2.5 V             :         : 4         : N              
+pmem_data_in[8]              : AJ16      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ17      : gnd    :                   :         :           :                
+pmem_data_out[125]           : AJ18      : output : 2.5 V             :         : 4         : N              
+sfp_out[37]                  : AJ19      : output : 2.5 V             :         : 4         : N              
+GND                          : AJ20      : gnd    :                   :         :           :                
+pmem_data_in[47]             : AJ21      : input  : 2.5 V             :         : 4         : N              
+sfp_out[39]                  : AJ22      : output : 2.5 V             :         : 4         : N              
+GND                          : AJ23      : gnd    :                   :         :           :                
+pmem_data_in[37]             : AJ24      : input  : 2.5 V             :         : 4         : N              
+inst[31]                     : AJ25      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ26      : gnd    :                   :         :           :                
+pmem_data_out[120]           : AJ27      : output : 2.5 V             :         : 4         : N              
+sfp_out[124]                 : AJ28      : output : 2.5 V             :         : 4         : N              
+GND                          : AJ29      : gnd    :                   :         :           :                
+pmem_data_in[124]            : AJ30      : input  : 2.5 V             :         : 5         : N              
+NC                           : AK2       :        :                   :         :           :                
+pmem_data_in[49]             : AK3       : input  : 2.5 V             :         : 3         : N              
+pmem_data_in[61]             : AK4       : input  : 2.5 V             :         : 3         : N              
+pmem_data_in[57]             : AK5       : input  : 2.5 V             :         : 3         : N              
+pmem_data_out[41]            : AK6       : output : 2.5 V             :         : 3         : N              
+pmem_data_out[36]            : AK7       : output : 2.5 V             :         : 3         : N              
+pmem_data_out[34]            : AK8       : output : 2.5 V             :         : 3         : N              
+xmem_data[28]                : AK9       : input  : 2.5 V             :         : 3         : N              
+pmem_data_out[32]            : AK10      : output : 2.5 V             :         : 3         : N              
+inst[24]                     : AK11      : input  : 2.5 V             :         : 3         : N              
+pmem_data_out[9]             : AK12      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[8]             : AK13      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[12]            : AK14      : output : 2.5 V             :         : 3         : N              
+pmem_data_out[14]            : AK15      : output : 2.5 V             :         : 4         : N              
+pmem_data_in[7]              : AK16      : input  : 2.5 V             :         : 4         : N              
+xmem_data[16]                : AK17      : input  : 2.5 V             :         : 4         : N              
+sfp_out[47]                  : AK18      : output : 2.5 V             :         : 4         : N              
+pmem_data_out[112]           : AK19      : output : 2.5 V             :         : 4         : N              
+pmem_data_out[123]           : AK20      : output : 2.5 V             :         : 4         : N              
+sfp_out[32]                  : AK21      : output : 2.5 V             :         : 4         : N              
+sfp_out[46]                  : AK22      : output : 2.5 V             :         : 4         : N              
+pmem_data_out[127]           : AK23      : output : 2.5 V             :         : 4         : N              
+pmem_data_out[114]           : AK24      : output : 2.5 V             :         : 4         : N              
+pmem_data_in[41]             : AK25      : input  : 2.5 V             :         : 4         : N              
+pmem_data_in[45]             : AK26      : input  : 2.5 V             :         : 4         : N              
+pmem_data_in[46]             : AK27      : input  : 2.5 V             :         : 4         : N              
+pmem_data_out[122]           : AK28      : output : 2.5 V             :         : 4         : N              
+sfp_out[117]                 : AK29      : output : 2.5 V             :         : 4         : N              
+nCONFIG                      : B1        :        :                   :         : 9         :                
+GND                          : B2        : gnd    :                   :         :           :                
+~ALTERA_DCLK~                : B3        : output : 2.5 V             :         : 9         : N              
+~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : B4        : input  : 2.5 V             :         : 9         : N              
+GND                          : B5        : gnd    :                   :         :           :                
+sfp_out[25]                  : B6        : output : 2.5 V             :         : 8         : N              
+sfp_out[30]                  : B7        : output : 2.5 V             :         : 8         : N              
+GND                          : B8        : gnd    :                   :         :           :                
+sfp_out[17]                  : B9        : output : 2.5 V             :         : 8         : N              
+sfp_out[22]                  : B10       : output : 2.5 V             :         : 8         : N              
+GND                          : B11       : gnd    :                   :         :           :                
+pmem_data_out[73]            : B12       : output : 2.5 V             :         : 8         : N              
+inst[6]                      : B13       : input  : 2.5 V             :         : 8         : N              
+GND                          : B14       : gnd    :                   :         :           :                
+pmem_data_in[9]              : B15       : input  : 2.5 V             :         : 7         : N              
+pmem_data_out[90]            : B16       : output : 2.5 V             :         : 7         : N              
+GND                          : B17       : gnd    :                   :         :           :                
+pmem_data_out[91]            : B18       : output : 2.5 V             :         : 7         : N              
+xmem_data[6]                 : B19       : input  : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+xmem_data[5]                 : B21       : input  : 2.5 V             :         : 7         : N              
+pmem_data_in[77]             : B22       : input  : 2.5 V             :         : 7         : N              
+GND                          : B23       : gnd    :                   :         :           :                
+pmem_data_in[66]             : B24       : input  : 2.5 V             :         : 7         : N              
+pmem_data_in[71]             : B25       : input  : 2.5 V             :         : 7         : N              
+GND                          : B26       : gnd    :                   :         :           :                
+pmem_data_in[74]             : B27       : input  : 2.5 V             :         : 7         : N              
+pmem_data_in[70]             : B28       : input  : 2.5 V             :         : 7         : N              
+GND                          : B29       : gnd    :                   :         :           :                
+pmem_data_in[69]             : B30       : input  : 2.5 V             :         : 7         : N              
+nCE                          : C1        :        :                   :         : 9         :                
+pmem_data_in[18]             : C2        : input  : 2.5 V             :         : 8         : N              
+pmem_data_out[26]            : C3        : output : 2.5 V             :         : 8         : N              
+pmem_data_in[27]             : C4        : input  : 2.5 V             :         : 8         : N              
+pmem_data_out[65]            : C5        : output : 2.5 V             :         : 8         : N              
+pmem_data_in[29]             : C6        : input  : 2.5 V             :         : 8         : N              
+pmem_data_out[18]            : C7        : output : 2.5 V             :         : 8         : N              
+pmem_data_out[31]            : C8        : output : 2.5 V             :         : 8         : N              
+pmem_data_out[29]            : C9        : output : 2.5 V             :         : 8         : N              
+pmem_data_out[70]            : C10       : output : 2.5 V             :         : 8         : N              
+pmem_data_in[22]             : C11       : input  : 2.5 V             :         : 8         : N              
+sfp_out[29]                  : C12       : output : 2.5 V             :         : 8         : N              
+sfp_out[28]                  : C13       : output : 2.5 V             :         : 8         : N              
+sfp_out[16]                  : C14       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[71]            : C15       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[89]            : C16       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[84]            : C17       : output : 2.5 V             :         : 7         : N              
+inst[15]                     : C18       : input  : 2.5 V             :         : 7         : N              
+reset                        : C19       : input  : 2.5 V             :         : 7         : N              
+inst[12]                     : C20       : input  : 2.5 V             :         : 7         : N              
+xmem_data[23]                : C21       : input  : 2.5 V             :         : 7         : N              
+inst[22]                     : C22       : input  : 2.5 V             :         : 7         : N              
+xmem_data[21]                : C23       : input  : 2.5 V             :         : 7         : N              
+pmem_data_in[76]             : C24       : input  : 2.5 V             :         : 7         : N              
+sfp_out[67]                  : C25       : output : 2.5 V             :         : 7         : N              
+sfp_out[73]                  : C26       : output : 2.5 V             :         : 7         : N              
+pmem_data_in[99]             : C27       : input  : 2.5 V             :         : 7         : N              
+inst[34]                     : C28       : input  : 2.5 V             :         : 7         : N              
+sfp_out[103]                 : C29       : output : 2.5 V             :         : 6         : N              
+sfp_out[107]                 : C30       : output : 2.5 V             :         : 6         : N              
+pmem_data_out[55]            : D1        : output : 2.5 V             :         : 8         : N              
+GND                          : D2        : gnd    :                   :         :           :                
+pmem_data_out[17]            : D3        : output : 2.5 V             :         : 8         : N              
+sfp_out[24]                  : D4        : output : 2.5 V             :         : 8         : N              
+pmem_data_in[20]             : D5        : input  : 2.5 V             :         : 8         : N              
+pmem_data_out[16]            : D6        : output : 2.5 V             :         : 8         : N              
+pmem_data_in[28]             : D7        : input  : 2.5 V             :         : 8         : N              
+inst[8]                      : D8        : input  : 2.5 V             :         : 8         : N              
+sfp_out[60]                  : D9        : output : 2.5 V             :         : 8         : N              
+pmem_data_out[20]            : D10       : output : 2.5 V             :         : 8         : N              
+pmem_data_in[31]             : D11       : input  : 2.5 V             :         : 8         : N              
+pmem_data_out[68]            : D12       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[77]            : D13       : output : 2.5 V             :         : 8         : N              
+sfp_out[20]                  : D14       : output : 2.5 V             :         : 8         : N              
+pmem_data_in[16]             : D15       : input  : 2.5 V             :         : 8         : N              
+pmem_data_out[87]            : D16       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[93]            : D17       : output : 2.5 V             :         : 7         : N              
+pmem_data_out[82]            : D18       : output : 2.5 V             :         : 7         : N              
+pmem_data_out[88]            : D19       : output : 2.5 V             :         : 7         : N              
+inst[17]                     : D20       : input  : 2.5 V             :         : 7         : N              
+sfp_out[72]                  : D21       : output : 2.5 V             :         : 7         : N              
+sfp_out[74]                  : D22       : output : 2.5 V             :         : 7         : N              
+xmem_data[20]                : D23       : input  : 2.5 V             :         : 7         : N              
+sfp_out[76]                  : D24       : output : 2.5 V             :         : 7         : N              
+sfp_out[77]                  : D25       : output : 2.5 V             :         : 7         : N              
+sfp_out[79]                  : D26       : output : 2.5 V             :         : 7         : N              
+sfp_out[98]                  : D27       : output : 2.5 V             :         : 7         : N              
+inst[32]                     : D28       : input  : 2.5 V             :         : 7         : N              
+sfp_out[102]                 : D29       : output : 2.5 V             :         : 6         : N              
+sfp_out[105]                 : D30       : output : 2.5 V             :         : 6         : N              
+TMS                          : E1        : input  :                   :         : 9         :                
+TDI                          : E2        : input  :                   :         : 9         :                
+inst[18]                     : E3        : input  : 2.5 V             :         : 8         : N              
+pmem_data_out[30]            : E4        : output : 2.5 V             :         : 8         : N              
+GND                          : E5        : gnd    :                   :         :           :                
+pmem_data_out[48]            : E6        : output : 2.5 V             :         : 8         : N              
+sfp_out[21]                  : E7        : output : 2.5 V             :         : 8         : N              
+GND                          : E8        : gnd    :                   :         :           :                
+pmem_data_out[19]            : E9        : output : 2.5 V             :         : 8         : N              
+pmem_data_out[24]            : E10       : output : 2.5 V             :         : 8         : N              
+GND                          : E11       : gnd    :                   :         :           :                
+pmem_data_out[22]            : E12       : output : 2.5 V             :         : 8         : N              
+pmem_data_in[21]             : E13       : input  : 2.5 V             :         : 8         : N              
+GND                          : E14       : gnd    :                   :         :           :                
+pmem_data_out[67]            : E15       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[75]            : E16       : output : 2.5 V             :         : 8         : N              
+GND                          : E17       : gnd    :                   :         :           :                
+xmem_data[7]                 : E18       : input  : 2.5 V             :         : 7         : N              
+xmem_data[4]                 : E19       : input  : 2.5 V             :         : 7         : N              
+GND                          : E20       : gnd    :                   :         :           :                
+sfp_out[64]                  : E21       : output : 2.5 V             :         : 7         : N              
+sfp_out[75]                  : E22       : output : 2.5 V             :         : 7         : N              
+GND                          : E23       : gnd    :                   :         :           :                
+sfp_out[78]                  : E24       : output : 2.5 V             :         : 7         : N              
+xmem_data[2]                 : E25       : input  : 2.5 V             :         : 7         : N              
+GND                          : E26       : gnd    :                   :         :           :                
+pmem_data_in[97]             : E27       : input  : 2.5 V             :         : 6         : N              
+pmem_data_in[109]            : E28       : input  : 2.5 V             :         : 6         : N              
+GND                          : E29       : gnd    :                   :         :           :                
+sfp_out[104]                 : E30       : output : 2.5 V             :         : 6         : N              
+TDO                          : F1        : output :                   :         : 9         :                
+TCK                          : F2        : input  :                   :         : 9         :                
+GND                          : F3        : gnd    :                   :         :           :                
+pmem_data_out[21]            : F4        : output : 2.5 V             :         : 8         : N              
+pmem_data_out[52]            : F5        : output : 2.5 V             :         : 8         : N              
+pmem_data_out[25]            : F6        : output : 2.5 V             :         : 8         : N              
+inst[7]                      : F7        : input  : 2.5 V             :         : 8         : N              
+pmem_data_out[58]            : F8        : output : 2.5 V             :         : 8         : N              
+pmem_data_out[23]            : F9        : output : 2.5 V             :         : 8         : N              
+pmem_data_in[25]             : F10       : input  : 2.5 V             :         : 8         : N              
+pmem_data_in[24]             : F11       : input  : 2.5 V             :         : 8         : N              
+sfp_out[19]                  : F12       : output : 2.5 V             :         : 8         : N              
+sfp_out[31]                  : F13       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[78]            : F14       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[66]            : F15       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[86]            : F16       : output : 2.5 V             :         : 8         : N              
+inst[28]                     : F17       : input  : 2.5 V             :         : 7         : N              
+pmem_data_out[94]            : F18       : output : 2.5 V             :         : 7         : N              
+sfp_out[68]                  : F19       : output : 2.5 V             :         : 7         : N              
+inst[19]                     : F20       : input  : 2.5 V             :         : 7         : N              
+sfp_out[71]                  : F21       : output : 2.5 V             :         : 7         : N              
+sfp_out[70]                  : F22       : output : 2.5 V             :         : 7         : N              
+pmem_data_in[73]             : F23       : input  : 2.5 V             :         : 7         : N              
+inst[29]                     : F24       : input  : 2.5 V             :         : 7         : N              
+sfp_out[111]                 : F25       : output : 2.5 V             :         : 7         : N              
+pmem_data_in[106]            : F26       : input  : 2.5 V             :         : 6         : N              
+pmem_data_in[98]             : F27       : input  : 2.5 V             :         : 6         : N              
+pmem_data_in[110]            : F28       : input  : 2.5 V             :         : 6         : N              
+pmem_data_in[101]            : F29       : input  : 2.5 V             :         : 6         : N              
+sfp_out[106]                 : F30       : output : 2.5 V             :         : 6         : N              
+GND                          : G1        : gnd    :                   :         :           :                
+GND                          : G2        : gnd    :                   :         :           :                
+GND                          : G3        : gnd    :                   :         :           :                
+GND                          : G4        : gnd    :                   :         :           :                
+GND                          : G5        : gnd    :                   :         :           :                
+inst[26]                     : G6        : input  : 2.5 V             :         : 8         : N              
+inst[13]                     : G7        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G8        :        :                   :         : 8         :                
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : G9        : input  : 2.5 V             :         : 9         : N              
+pmem_data_in[23]             : G10       : input  : 2.5 V             :         : 8         : N              
+sfp_out[18]                  : G11       : output : 2.5 V             :         : 8         : N              
+sfp_out[23]                  : G12       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[74]            : G13       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[95]            : G14       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[92]            : G15       : output : 2.5 V             :         : 8         : N              
+pmem_data_out[81]            : G16       : output : 2.5 V             :         : 7         : N              
+inst[23]                     : G17       : input  : 2.5 V             :         : 7         : N              
+pmem_data_out[80]            : G18       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : G19       : power  :                   : 2.5V    : 7         :                
+sfp_out[69]                  : G20       : output : 2.5 V             :         : 7         : N              
+pmem_data_in[79]             : G21       : input  : 2.5 V             :         : 7         : N              
+pmem_data_in[72]             : G22       : input  : 2.5 V             :         : 7         : N              
+pmem_data_in[78]             : G23       : input  : 2.5 V             :         : 7         : N              
+xmem_data[1]                 : G24       : input  : 2.5 V             :         : 7         : N              
+pmem_data_in[107]            : G25       : input  : 2.5 V             :         : 7         : N              
+pmem_data_in[104]            : G26       : input  : 2.5 V             :         : 6         : N              
+pmem_data_in[105]            : G27       : input  : 2.5 V             :         : 6         : N              
+sfp_out[110]                 : G28       : output : 2.5 V             :         : 6         : N              
+sfp_out[108]                 : G29       : output : 2.5 V             :         : 6         : N              
+pmem_data_in[95]             : G30       : input  : 2.5 V             :         : 6         : N              
+GND                          : H1        : gnd    :                   :         :           :                
+GND                          : H2        : gnd    :                   :         :           :                
+GXB_NC                       : H3        :        :                   :         : QL1       :                
+GXB_NC                       : H4        :        :                   :         : QL1       :                
+GND                          : H5        : gnd    :                   :         :           :                
+GND                          : H6        : gnd    :                   :         :           :                
+VCCIO9                       : H7        : power  :                   : 2.5V    : 9         :                
+GND                          : H8        : gnd    :                   :         :           :                
+pmem_data_out[61]            : H9        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : H10       : power  :                   : 2.5V    : 8         :                
+GND                          : H11       : gnd    :                   :         :           :                
+VCCIO8                       : H12       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : H13       : power  :                   : 2.5V    : 8         :                
+GND                          : H14       : gnd    :                   :         :           :                
+VCCIO8                       : H15       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : H16       : power  :                   : 2.5V    : 8         :                
+GND                          : H17       : gnd    :                   :         :           :                
+VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : H19       : power  :                   : 2.5V    : 7         :                
+GND                          : H20       : gnd    :                   :         :           :                
+VCCIO7                       : H21       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : H22       : power  :                   : 2.5V    : 7         :                
+GND                          : H23       : gnd    :                   :         :           :                
+inst[16]                     : H24       : input  : 2.5 V             :         : 7         : N              
+pmem_data_in[108]            : H25       : input  : 2.5 V             :         : 6         : N              
+GND                          : H26       : gnd    :                   :         :           :                
+pmem_data_in[103]            : H27       : input  : 2.5 V             :         : 6         : N              
+sfp_out[100]                 : H28       : output : 2.5 V             :         : 6         : N              
+GND                          : H29       : gnd    :                   :         :           :                
+sfp_out[82]                  : H30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : J1        :        :                   :         : QL1       :                
+GXB_GND*                     : J2        :        :                   :         : QL1       :                
+GND                          : J3        : gnd    :                   :         :           :                
+GND                          : J4        : gnd    :                   :         :           :                
+GND                          : J5        : gnd    :                   :         :           :                
+VCCA                         : J6        : power  :                   : 2.5V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+pmem_data_out[27]            : J9        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : J10       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J11       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J12       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J13       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J14       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J15       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J16       : power  :                   : 2.5V    : 8         :                
+VCCIO7                       : J17       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J19       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J20       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J21       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J22       : power  :                   : 2.5V    : 7         :                
+VCCD_PLL                     : J23       : power  :                   : 1.2V    :           :                
+GND                          : J24       : gnd    :                   :         :           :                
+pmem_data_in[102]            : J25       : input  : 2.5 V             :         : 6         : N              
+sfp_out[99]                  : J26       : output : 2.5 V             :         : 6         : N              
+pmem_data_in[96]             : J27       : input  : 2.5 V             :         : 6         : N              
+sfp_out[101]                 : J28       : output : 2.5 V             :         : 6         : N              
+pmem_data_in[82]             : J29       : input  : 2.5 V             :         : 6         : N              
+pmem_data_in[91]             : J30       : input  : 2.5 V             :         : 6         : N              
+GND                          : K1        : gnd    :                   :         :           :                
+GND                          : K2        : gnd    :                   :         :           :                
+GXB_NC                       : K3        :        :                   :         : QL1       :                
+GXB_NC                       : K4        :        :                   :         : QL1       :                
+VCCL_GXB                     : K5        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : K6        : power  :                   : 1.2V    :           :                
+GND                          : K7        : gnd    :                   :         :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+VCC_CLKIN8B                  : K10       : power  :                   : 2.5V    : 8B        :                
+GXB_GND*                     : K11       :        :                   :         : 8B        :                
+GND                          : K12       : gnd    :                   :         :           :                
+VCCINT                       : K13       : power  :                   : 1.2V    :           :                
+GND                          : K14       : gnd    :                   :         :           :                
+GXB_GND*                     : K15       :        :                   :         : 8A        :                
+VCC_CLKIN8A                  : K16       : power  :                   : 2.5V    : 8A        :                
+pmem_data_out[83]            : K17       : output : 2.5 V             :         : 7         : N              
+xmem_data[11]                : K18       : input  : 2.5 V             :         : 7         : N              
+pmem_data_out[85]            : K19       : output : 2.5 V             :         : 7         : N              
+GND                          : K20       : gnd    :                   :         :           :                
+xmem_data[3]                 : K21       : input  : 2.5 V             :         : 7         : N              
+xmem_data[0]                 : K22       : input  : 2.5 V             :         : 7         : N              
+VCCA                         : K23       : power  :                   : 2.5V    :           :                
+pmem_data_in[100]            : K24       : input  : 2.5 V             :         : 6         : N              
+sfp_out[97]                  : K25       : output : 2.5 V             :         : 6         : N              
+sfp_out[109]                 : K26       : output : 2.5 V             :         : 6         : N              
+sfp_out[96]                  : K27       : output : 2.5 V             :         : 6         : N              
+xmem_data[26]                : K28       : input  : 2.5 V             :         : 6         : N              
+pmem_data_in[86]             : K29       : input  : 2.5 V             :         : 6         : N              
+sfp_out[95]                  : K30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : L1        :        :                   :         : QL1       :                
+GXB_GND*                     : L2        :        :                   :         : QL1       :                
+GND                          : L3        : gnd    :                   :         :           :                
+GND                          : L4        : gnd    :                   :         :           :                
+GND                          : L5        : gnd    :                   :         :           :                
+VCCH_GXB                     : L6        : power  :                   : 2.5V    :           :                
+GND                          : L7        : gnd    :                   :         :           :                
+VCCA                         : L8        : power  :                   : 2.5V    :           :                
+GND                          : L9        : gnd    :                   :         :           :                
+GXB_GND*                     : L10       :        :                   :         : 8B        :                
+GXB_GND*                     : L11       :        :                   :         : 8B        :                
+VCCINT                       : L12       : power  :                   : 1.2V    :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : L15       :        :                   :         : 8A        :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+VCCINT                       : L20       : power  :                   : 1.2V    :           :                
+GND                          : L21       : gnd    :                   :         :           :                
+VCCIO6                       : L22       : power  :                   : 2.5V    : 6         :                
+GND                          : L23       : gnd    :                   :         :           :                
+VCCIO6                       : L24       : power  :                   : 2.5V    : 6         :                
+inst[35]                     : L25       : input  : 2.5 V             :         : 6         : N              
+GND                          : L26       : gnd    :                   :         :           :                
+xmem_data[24]                : L27       : input  : 2.5 V             :         : 6         : N              
+xmem_data[25]                : L28       : input  : 2.5 V             :         : 6         : N              
+GND                          : L29       : gnd    :                   :         :           :                
+sfp_out[93]                  : L30       : output : 2.5 V             :         : 6         : N              
+GND                          : M1        : gnd    :                   :         :           :                
+GND                          : M2        : gnd    :                   :         :           :                
+GXB_NC                       : M3        :        :                   :         : QL1       :                
+GXB_NC                       : M4        :        :                   :         : QL1       :                
+VCCL_GXB                     : M5        : power  :                   : 1.2V    :           :                
+GND                          : M6        : gnd    :                   :         :           :                
+VCCA_GXB                     : M7        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : M8        : power  :                   : 1.2V    :           :                
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GXB_GND*                     : M10       :        :                   :         : 8B        :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCCINT                       : M15       : power  :                   : 1.2V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCCINT                       : M19       : power  :                   : 1.2V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+inst[37]                     : M21       : input  : 2.5 V             :         : 6         : N              
+pmem_data_in[111]            : M22       : input  : 2.5 V             :         : 6         : N              
+VCCIO6                       : M23       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : M24       : power  :                   : 2.5V    : 6         :                
+sfp_out[87]                  : M25       : output : 2.5 V             :         : 6         : N              
+pmem_data_in[88]             : M26       : input  : 2.5 V             :         : 6         : N              
+pmem_data_in[94]             : M27       : input  : 2.5 V             :         : 6         : N              
+sfp_out[94]                  : M28       : output : 2.5 V             :         : 6         : N              
+sfp_out[85]                  : M29       : output : 2.5 V             :         : 6         : N              
+pmem_data_in[92]             : M30       : input  : 2.5 V             :         : 6         : N              
+GXB_GND*                     : N1        :        :                   :         : QL1       :                
+GXB_GND*                     : N2        :        :                   :         : QL1       :                
+GND                          : N3        : gnd    :                   :         :           :                
+GND                          : N4        : gnd    :                   :         :           :                
+VCCH_GXB                     : N5        : power  :                   : 2.5V    :           :                
+GND                          : N6        : gnd    :                   :         :           :                
+VCCL_GXB                     : N7        : power  :                   : 1.2V    :           :                
+VCCINT                       : N8        : power  :                   : 1.2V    :           :                
+GND                          : N9        : gnd    :                   :         :           :                
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCCINT                       : N12       : power  :                   : 1.2V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCCINT                       : N18       : power  :                   : 1.2V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCCINT                       : N20       : power  :                   : 1.2V    :           :                
+xmem_data[27]                : N21       : input  : 2.5 V             :         : 6         : N              
+VCCIO6                       : N22       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : N23       : power  :                   : 2.5V    : 6         :                
+pmem_data_in[84]             : N24       : input  : 2.5 V             :         : 6         : N              
+sfp_out[86]                  : N25       : output : 2.5 V             :         : 6         : N              
+sfp_out[92]                  : N26       : output : 2.5 V             :         : 6         : N              
+pmem_data_in[85]             : N27       : input  : 2.5 V             :         : 6         : N              
+pmem_data_in[93]             : N28       : input  : 2.5 V             :         : 6         : N              
+inst[1]                      : N29       : input  : 2.5 V             :         : 6         : N              
+sfp_out[90]                  : N30       : output : 2.5 V             :         : 6         : N              
+GND                          : P1        : gnd    :                   :         :           :                
+GND                          : P2        : gnd    :                   :         :           :                
+GXB_NC                       : P3        :        :                   :         : QL1       :                
+GXB_NC                       : P4        :        :                   :         : QL1       :                
+GND                          : P5        : gnd    :                   :         :           :                
+VCCL_GXB                     : P6        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : P7        : power  :                   : 1.2V    :           :                
+GND                          : P8        : gnd    :                   :         :           :                
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCCINT                       : P15       : power  :                   : 1.2V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCINT                       : P19       : power  :                   : 1.2V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+inst[20]                     : P21       : input  : 2.5 V             :         : 6         : N              
+VCCIO6                       : P22       : power  :                   : 2.5V    : 6         :                
+GND                          : P23       : gnd    :                   :         :           :                
+VCCIO6                       : P24       : power  :                   : 2.5V    : 6         :                
+inst[0]                      : P25       : input  : 2.5 V             :         : 6         : N              
+GND                          : P26       : gnd    :                   :         :           :                
+sfp_out[80]                  : P27       : output : 2.5 V             :         : 6         : N              
+sfp_out[89]                  : P28       : output : 2.5 V             :         : 6         : N              
+GND                          : P29       : gnd    :                   :         :           :                
+sfp_out[81]                  : P30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : R1        :        :                   :         : QL1       :                
+GXB_GND*                     : R2        :        :                   :         : QL1       :                
+GND                          : R3        : gnd    :                   :         :           :                
+GND                          : R4        : gnd    :                   :         :           :                
+GND                          : R5        : gnd    :                   :         :           :                
+VCCA_GXB                     : R6        : power  :                   : 2.5V    :           :                
+GND                          : R7        : gnd    :                   :         :           :                
+VCCA                         : R8        : power  :                   : 2.5V    :           :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCCINT                       : R14       : power  :                   : 1.2V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCCINT                       : R18       : power  :                   : 1.2V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+VCCINT                       : R20       : power  :                   : 1.2V    :           :                
+GND                          : R21       : gnd    :                   :         :           :                
+VCCIO6                       : R22       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : R23       : power  :                   : 2.5V    : 6         :                
+pmem_data_in[89]             : R24       : input  : 2.5 V             :         : 6         : N              
+pmem_data_in[81]             : R25       : input  : 2.5 V             :         : 6         : N              
+sfp_out[84]                  : R26       : output : 2.5 V             :         : 6         : N              
+pmem_data_in[80]             : R27       : input  : 2.5 V             :         : 6         : N              
+sfp_out[83]                  : R28       : output : 2.5 V             :         : 6         : N              
+xmem_data[12]                : R29       : input  : 2.5 V             :         : 6         : N              
+sfp_out[91]                  : R30       : output : 2.5 V             :         : 6         : N              
+GND                          : T1        : gnd    :                   :         :           :                
+GND                          : T2        : gnd    :                   :         :           :                
+GXB_NC                       : T3        :        :                   :         : QL0       :                
+GXB_NC                       : T4        :        :                   :         : QL0       :                
+GND                          : T5        : gnd    :                   :         :           :                
+VCCL_GXB                     : T6        : power  :                   : 1.2V    :           :                
+GND                          : T7        : gnd    :                   :         :           :                
+VCCA                         : T8        : power  :                   : 2.5V    :           :                
+VCCINT                       : T9        : power  :                   : 1.2V    :           :                
+GND                          : T10       : gnd    :                   :         :           :                
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCCINT                       : T17       : power  :                   : 1.2V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCCINT                       : T19       : power  :                   : 1.2V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+sfp_out[5]                   : T21       : output : 2.5 V             :         : 5         : N              
+GND                          : T22       : gnd    :                   :         :           :                
+xmem_data[13]                : T23       : input  : 2.5 V             :         : 5         : N              
+pmem_data_in[90]             : T24       : input  : 2.5 V             :         : 5         : N              
+pmem_data_out[99]            : T25       : output : 2.5 V             :         : 5         : N              
+pmem_data_out[59]            : T26       : output : 2.5 V             :         : 5         : N              
+xmem_data[15]                : T27       : input  : 2.5 V             :         : 5         : N              
+pmem_data_in[83]             : T28       : input  : 2.5 V             :         : 6         : N              
+pmem_data_in[11]             : T29       : input  : 2.5 V             :         : 6         : N              
+pmem_data_in[12]             : T30       : input  : 2.5 V             :         : 6         : N              
+GXB_GND*                     : U1        :        :                   :         : QL0       :                
+GXB_GND*                     : U2        :        :                   :         : QL0       :                
+GND                          : U3        : gnd    :                   :         :           :                
+GND                          : U4        : gnd    :                   :         :           :                
+GND                          : U5        : gnd    :                   :         :           :                
+VCCH_GXB                     : U6        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : U7        : power  :                   : 1.2V    :           :                
+VCCINT                       : U8        : power  :                   : 1.2V    :           :                
+GND                          : U9        : gnd    :                   :         :           :                
+VCCINT                       : U10       : power  :                   : 1.2V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCCINT                       : U12       : power  :                   : 1.2V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCCINT                       : U18       : power  :                   : 1.2V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+VCCINT                       : U20       : power  :                   : 1.2V    :           :                
+pmem_data_out[97]            : U21       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : U22       : power  :                   : 2.5V    : 5         :                
+GND                          : U23       : gnd    :                   :         :           :                
+VCCIO5                       : U24       : power  :                   : 2.5V    : 5         :                
+pmem_data_out[96]            : U25       : output : 2.5 V             :         : 5         : N              
+GND                          : U26       : gnd    :                   :         :           :                
+xmem_data[14]                : U27       : input  : 2.5 V             :         : 5         : N              
+pmem_data_out[102]           : U28       : output : 2.5 V             :         : 5         : N              
+GND                          : U29       : gnd    :                   :         :           :                
+inst[38]                     : U30       : input  : 2.5 V             :         : 5         : N              
+GND                          : V1        : gnd    :                   :         :           :                
+GND                          : V2        : gnd    :                   :         :           :                
+GXB_NC                       : V3        :        :                   :         : QL0       :                
+GXB_NC                       : V4        :        :                   :         : QL0       :                
+VCCL_GXB                     : V5        : power  :                   : 1.2V    :           :                
+GND                          : V6        : gnd    :                   :         :           :                
+VCCA_GXB                     : V7        : power  :                   : 2.5V    :           :                
+GND                          : V8        : gnd    :                   :         :           :                
+VCCINT                       : V9        : power  :                   : 1.2V    :           :                
+GND                          : V10       : gnd    :                   :         :           :                
+GXB_GND*                     : V11       :        :                   :         : 3B        :                
+GXB_GND*                     : V12       :        :                   :         : 3B        :                
+VCCINT                       : V13       : power  :                   : 1.2V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+GXB_GND*                     : V15       :        :                   :         : 3A        :                
+GND                          : V16       : gnd    :                   :         :           :                
+VCCINT                       : V17       : power  :                   : 1.2V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCCINT                       : V19       : power  :                   : 1.2V    :           :                
+GND                          : V20       : gnd    :                   :         :           :                
+sfp_out[12]                  : V21       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : V22       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : V23       : power  :                   : 2.5V    : 5         :                
+GND                          : V24       : gnd    :                   :         :           :                
+pmem_data_out[108]           : V25       : output : 2.5 V             :         : 5         : N              
+pmem_data_out[107]           : V26       : output : 2.5 V             :         : 5         : N              
+inst[5]                      : V27       : input  : 2.5 V             :         : 5         : N              
+pmem_data_out[109]           : V28       : output : 2.5 V             :         : 5         : N              
+inst[33]                     : V29       : input  : 2.5 V             :         : 5         : N              
+pmem_data_in[0]              : V30       : input  : 2.5 V             :         : 5         : N              
+GXB_GND*                     : W1        :        :                   :         : QL0       :                
+GXB_GND*                     : W2        :        :                   :         : QL0       :                
+GND                          : W3        : gnd    :                   :         :           :                
+GND                          : W4        : gnd    :                   :         :           :                
+GND                          : W5        : gnd    :                   :         :           :                
+GND                          : W6        : gnd    :                   :         :           :                
+VCCH_GXB                     : W7        : power  :                   : 2.5V    :           :                
+VCCINT                       : W8        : power  :                   : 1.2V    :           :                
+GND                          : W9        : gnd    :                   :         :           :                
+VCCINT                       : W10       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : W11       :        :                   :         : 3B        :                
+GXB_GND*                     : W12       :        :                   :         : 3B        :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCCINT                       : W14       : power  :                   : 1.2V    :           :                
+clk                          : W15       : input  : 2.5 V             :         : 3A        : N              
+VCC_CLKIN3A                  : W16       : power  :                   : 2.5V    : 3A        :                
+GND                          : W17       : gnd    :                   :         :           :                
+VCCINT                       : W18       : power  :                   : 1.2V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+VCCINT                       : W20       : power  :                   : 1.2V    :           :                
+GND                          : W21       : gnd    :                   :         :           :                
+VCCIO5                       : W22       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : W23       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
+pmem_data_out[110]           : W25       : output : 2.5 V             :         : 5         : N              
+sfp_out[88]                  : W26       : output : 2.5 V             :         : 5         : N              
+pmem_data_out[106]           : W27       : output : 2.5 V             :         : 5         : N              
+pmem_data_out[103]           : W28       : output : 2.5 V             :         : 5         : N              
+pmem_data_out[98]            : W29       : output : 2.5 V             :         : 5         : N              
+pmem_data_out[100]           : W30       : output : 2.5 V             :         : 5         : N              
+GND                          : Y1        : gnd    :                   :         :           :                
+GND                          : Y2        : gnd    :                   :         :           :                
+GXB_NC                       : Y3        :        :                   :         : QL0       :                
+GXB_NC                       : Y4        :        :                   :         : QL0       :                
+VCCL_GXB                     : Y5        : power  :                   : 1.2V    :           :                
+VCCA_GXB                     : Y6        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : Y7        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : Y8        : power  :                   : 1.2V    :           :                
+GND                          : Y9        : gnd    :                   :         :           :                
+GND                          : Y10       : gnd    :                   :         :           :                
+VCCINT                       : Y11       : power  :                   : 1.2V    :           :                
+VCC_CLKIN3B                  : Y12       : power  :                   : 2.5V    : 3B        :                
+VCCINT                       : Y13       : power  :                   : 1.2V    :           :                
+GND                          : Y14       : gnd    :                   :         :           :                
+VCCINT                       : Y15       : power  :                   : 1.2V    :           :                
+GND                          : Y16       : gnd    :                   :         :           :                
+xmem_data[18]                : Y17       : input  : 2.5 V             :         : 4         : N              
+sfp_out[34]                  : Y18       : output : 2.5 V             :         : 4         : N              
+sfp_out[36]                  : Y19       : output : 2.5 V             :         : 4         : N              
+sfp_out[114]                 : Y20       : output : 2.5 V             :         : 4         : N              
+sfp_out[119]                 : Y21       : output : 2.5 V             :         : 4         : N              
+sfp_out[6]                   : Y22       : output : 2.5 V             :         : 5         : N              
+GND                          : Y23       : gnd    :                   :         :           :                
+VCCIO5                       : Y24       : power  :                   : 2.5V    : 5         :                
+sfp_out[121]                 : Y25       : output : 2.5 V             :         : 5         : N              
+GND                          : Y26       : gnd    :                   :         :           :                
+inst[11]                     : Y27       : input  : 2.5 V             :         : 5         : N              
+sfp_out[3]                   : Y28       : output : 2.5 V             :         : 5         : N              
+GND                          : Y29       : gnd    :                   :         :           :                
+pmem_data_out[111]           : Y30       : output : 2.5 V             :         : 5         : N              

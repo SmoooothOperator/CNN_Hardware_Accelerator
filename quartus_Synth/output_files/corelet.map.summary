@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Mon Dec  1 15:22:24 2025
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Standard Edition
+Revision Name : corelet
+Top-level Entity Name : corelet
+Family : Cyclone IV GX
+Total logic elements : 37,061
+    Total combinational functions : 24,877
+    Dedicated logic registers : 15,802
+Total registers : 15802
+Total pins : 458
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

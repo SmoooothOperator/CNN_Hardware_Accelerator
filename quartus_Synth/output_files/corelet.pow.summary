@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Mon Dec  1 15:30:30 2025
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Standard Edition
+Revision Name : corelet
+Top-level Entity Name : corelet
+Family : Cyclone IV GX
+Device : EP4CGX150DF31I7AD
+Power Models : Final
+Total Thermal Power Dissipation : 292.87 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 119.86 mW
+I/O Thermal Power Dissipation : 173.01 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data
