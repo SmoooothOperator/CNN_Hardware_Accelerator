@@ -1,0 +1,53 @@
+module ififo (clk, in, out, rd, wr, o_full, reset, o_ready);
+
+  parameter col  = 8;
+  parameter bw = 4;
+
+  input  clk;
+  input  wr;
+  input  rd;
+  input  reset;
+  input  [col*bw-1:0] in;
+  output [col*bw-1:0] out;
+  output o_full;
+  output o_ready;
+
+  wire [col-1:0] empty;
+  wire [col-1:0] full;
+  reg [col-1:0] rd_en;
+  
+
+  assign o_ready = ~|full ; // the fifo module is ready to accept new input, not OR full meanings all FIFO has at least 1 spot
+  assign o_full  = |full ; // one or more fifo module is full, meaning we cant accept more input vectors of data. ORing all full bits tells you this
+
+  genvar i;
+  generate
+  for (i=0; i<col ; i=i+1) begin : col_num
+      fifo_depth64 #(.bw(bw)) fifo_instance (
+	 .rd_clk(clk),
+	 .wr_clk(clk),
+	 .rd(rd_en[i]), // Read enable should be based on the reg rd_en, since we might want to give the systolic array data at different timings
+	 .wr(wr),     //write should enable for each fifo when the overall write from the module is high, since we write a whole vector at a time
+         .o_empty(empty[i]),
+         .o_full(full[i]),
+	 .in(in[bw*(i+1)-1:bw*i]),
+	 .out(out[bw*(i+1)-1:bw*i]),
+         .reset(reset));
+  end
+  endgenerate
+
+  always @ (posedge clk) begin
+   if (reset) begin
+      rd_en <= 8'b00000000;
+   end
+   else
+
+      if (rd) begin // enable 1 col at a time until all is enabled
+         rd_en <= rd_en << 1 | 1'b1;
+      end
+      else begin // rd = 0, disable 1 col at a time until all is disabled
+         rd_en <= rd_en << 1 | 1'b0;
+      end
+    end
+
+endmodule
